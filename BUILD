@@ -5,11 +5,21 @@ load(
 )
 
 xcodeproj(
-    name = "BazelProject",
-    project_name = "BazelProject",
+    name = "BazelProject_bwx",
+    project_name = "BazelProject_bwx",
     build_mode = "xcode",
     tags = ["manual"],
     top_level_targets = [
-        top_level_target("//src:App", target_environments = ["simulator"]),
+        top_level_target("//src:SwiftLib_Tests", target_environments = ["simulator"]),
+    ],
+)
+
+xcodeproj(
+    name = "BazelProject_bwb",
+    project_name = "BazelProject_bwb",
+    build_mode = "bazel",
+    tags = ["manual"],
+    top_level_targets = [
+        top_level_target("//src:SwiftLib_Tests", target_environments = ["simulator"]),
     ],
 )

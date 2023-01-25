@@ -1,6 +1,10 @@
-.PHONY: bazel_project
-bazel_project:
-	bazelisk run //:BazelProject && open BazelProject.xcodeproj
+.PHONY: bazel_bwb_project
+bazel_bwb_project:
+	bazelisk run //:BazelProject_bwb && open BazelProject_bwb.xcodeproj
+
+.PHONY: bazel_bwx_project
+bazel_bwx_project:
+	bazelisk run //:BazelProject_bwx && open BazelProject_bwx.xcodeproj
 
 .PHONY: xcodegen_project
 xcodegen_project:
