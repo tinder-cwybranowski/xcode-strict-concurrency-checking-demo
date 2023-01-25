@@ -63,3 +63,7 @@ After performing the following steps:
 `SwiftLib` compiles with **no** concurrency warnings in BwB mode.
 
 <img width="1000" alt="Screenshot 2023-01-25 at 2 39 58 PM" src="https://user-images.githubusercontent.com/40372184/214672409-6d977837-272f-441d-80e4-743d2eba2085.png">
+
+## Notes
+
+- [As confirmed here](https://github.com/buildbuddy-io/rules_xcodeproj/issues/1657#issuecomment-1404178027), concurrency warnings are surfaced during command-line build invocation after adding the `-warn-concurrency` copt to `SwiftLib`.

@@ -8,6 +8,9 @@ swift_library(
     name = "SwiftLib",
     module_name = "SwiftLib",
     srcs = glob(["swift-lib/source/*.swift"]),
+    copts = [
+        "-warn-concurrency"
+    ],
 )
 
 swift_test(
