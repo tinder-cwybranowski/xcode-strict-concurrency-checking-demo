@@ -50,16 +50,16 @@ After performing the following steps:
 - Configure `Strict Concurrency Checking: complete` via `Project > BazelProject_bwb > Build Settings > Strict Concurrency Checking > complete`
 - Build `SwiftLib` target
 
-We see that `SwiftLib` compiles without any additional warnings, which is unexpected.
+<img width="1000" alt="Screenshot 2023-01-25 at 2 40 31 PM" src="https://user-images.githubusercontent.com/40372184/214672269-3aa19d25-17aa-4dd0-b5ff-88588d12e2cf.png">
 
 ### Expected Outcome
 
 `SwiftLib` compiles with **two** concurrency warnings in BwB mode.
 
-TODO: Image
+<img width="1000" alt="Screenshot 2023-01-25 at 2 39 16 PM" src="https://user-images.githubusercontent.com/40372184/214672342-01f17aed-43de-4227-bfcf-7b8a9461ce6e.png">
 
 ### Actual Outcome
 
 `SwiftLib` compiles with **no** concurrency warnings in BwB mode.
 
-TODO: Image
+<img width="1000" alt="Screenshot 2023-01-25 at 2 39 58 PM" src="https://user-images.githubusercontent.com/40372184/214672409-6d977837-272f-441d-80e4-743d2eba2085.png">
