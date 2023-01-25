@@ -2,7 +2,7 @@
 
 This project demonstrates an issue in [buildbuddy-io/rules_xcodeproj](https://github.com/buildbuddy-io/rules_xcodeproj) whereby the Swift 5.7 `Strict Concurrency Checking` feature does not seem to work as expected in BwB (Build-with-Bazel) mode. As described below, a buildbuddy-io/rules_xcodeproj Xcode BwB project is compared to a rules_xcodeproj Xcode BwX project, and also a yonaskolb/XcodeGen Xcode project to understand how a vanilla Xcode project behaves.
 
-This project was created to add context and reproduction steps to the [GitHub Issue opened here](TODO).
+This project was created to add context and reproduction steps to the [GitHub Issue opened here](https://github.com/buildbuddy-io/rules_xcodeproj/issues/1657).
 
 ## Configuration
 
