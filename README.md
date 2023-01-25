@@ -64,6 +64,13 @@ After performing the following steps:
 
 <img width="1000" alt="Screenshot 2023-01-25 at 2 39 58 PM" src="https://user-images.githubusercontent.com/40372184/214672409-6d977837-272f-441d-80e4-743d2eba2085.png">
 
+#### 1/25/23 Update
+
+This appears to be working as expected after introducing the `-warn-concurrency` copt to `SwiftLib`.
+
+TODO: Image
+
 ## Notes
 
 - [As confirmed here](https://github.com/buildbuddy-io/rules_xcodeproj/issues/1657#issuecomment-1404178027), concurrency warnings are surfaced during command-line build invocation after adding the `-warn-concurrency` copt to `SwiftLib`.
+- [As confirmed here](https://github.com/buildbuddy-io/rules_xcodeproj/issues/1657#issuecomment-1404191779), the new `-warn-concurrency` copt successfully propagates to a BwB project and surfaces warnings, provided that there isn't already a cached build that short-circuits first (e.g. the target was previously build successfully via command-line without any additional source edits).
