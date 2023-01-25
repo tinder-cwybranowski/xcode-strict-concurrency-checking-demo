@@ -68,7 +68,7 @@ After performing the following steps:
 
 This appears to be working as expected after introducing the `-warn-concurrency` copt to `SwiftLib`.
 
-TODO: Image
+<img width="1000" alt="Screenshot 2023-01-25 at 3 34 44 PM" src="https://user-images.githubusercontent.com/40372184/214684755-3b9c10da-1c13-42f6-b826-544a69d93d98.png">
 
 ## Notes
 
